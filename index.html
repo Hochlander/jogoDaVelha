@@ -284,7 +284,12 @@
                                 c = Math.round(Math.random() * 2);
                             } while (jogo[l][c] != "");
                             jogo[l][c] = "0";
-                        } else {
+                        } else if(
+                            (jogada=9)
+                        ){
+                            alert("velha")
+                        }
+                        else{
                             for (var l = 0; l < 3; l++) {
                                 for (var c = 0; c < 3; c++) {
                                     if (jogo[l][c] == "") {
